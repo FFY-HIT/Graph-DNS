@@ -166,7 +166,7 @@ This is the standard workflow for running GraphDNS on a dataset.
 ### Step 1: Generate `ZoneRecord.facts`
 
 ```bash
-./preprocess ./synthetic_dataset
+./preprocess ../synthetic_dataset
 ```
 
 ### Step 2: Run Graph-Based Verification
