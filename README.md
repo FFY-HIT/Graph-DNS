@@ -268,15 +268,4 @@ Run:
 
 ## Public Large-Scale Dataset
 
-The Census dataset can be used for large-scale evaluation.
-
-Public source:
-
-```text
-https://zenodo.org/records/3905968
-```
----
-
-## Acknowledgments
-
-We thank the providers of public DNS datasets and the technical teams who supported validation on operational DNS configurations.
+The Census dataset can be used for large-scale evaluation. Public source: https://zenodo.org/records/3905968
