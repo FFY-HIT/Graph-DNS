@@ -177,18 +177,11 @@ This is the standard workflow for running GraphDNS on a dataset.
 
 ### Step 3: Inspect Outputs
 
-GraphDNS produces two main output files:
+GraphDNS produces an output file:
 
 ```text
 Error.tsv
-GraphEdge.tsv
 ```
-
----
-
-## Output Files
-
-### 1. `Error.tsv`
 
 `Error.tsv` contains detected configuration anomalies.
 
@@ -205,40 +198,6 @@ No_Rewrite_Blackholing    old.example.com.    CNAME target cannot reach terminal
 No_Lame_Delegation        sub.example.com.    NS server exists but is not authoritative: ns1.sub.example.com.
 Shadow_Record             stale.sub.example.com.    Occluded by NS delegation
 ```
-
-### 2. `GraphEdge.tsv`
-
-`GraphEdge.tsv` contains the graph relations materialized by GraphDNS.
-
-Format:
-
-```text
-src    dst    kind    record_id
-```
-
-Example:
-
-```text
-ns1.university.edu.    university.edu.    NS_Delegation    12
-university.edu.        ns1.university.edu. Child_Apex_NS   23
-old.example.com.       new.example.com.   CNAME_Record     41
-404.campus.edu.        *.campus.edu.      CNAME_Rewrite    42
-campus.edu.            www.campus.edu.    DNAME_Rewrite    57
-ns1.child.edu.         192.0.2.53         Support_Glue     88
-```
-
-### Edge Types
-
-| Edge Type       | Meaning                                                              |
-| --------------- | -------------------------------------------------------------------- |
-| `NS_Delegation` | Delegation edge induced by a parent-side non-apex `NS` record        |
-| `Child_Apex_NS` | Child-side apex `NS` record used for delegation-consistency checking |
-| `CNAME_Record`  | Record-structure edge from a `CNAME` owner to its target             |
-| `CNAME_Rewrite` | Rewriting continuation edge after CNAME target matching              |
-| `DNAME_Record`  | Record-structure edge from a `DNAME` owner to its target root        |
-| `DNAME_Rewrite` | DNAME-induced subtree or rewritten-name continuation edge            |
-| `Terminal`      | Terminal answer edge, such as `A`, `AAAA`, `MX`, or `TXT`            |
-| `Support_Glue`  | In-bailiwick glue address record supporting delegation               |
 
 ---
 
