@@ -177,13 +177,7 @@ This is the standard workflow for running GraphDNS on a dataset.
 
 ### Step 3: Inspect Outputs
 
-GraphDNS produces an output file:
-
-```text
-Error.tsv
-```
-
-`Error.tsv` contains detected configuration anomalies.
+GraphDNS produces an output file: Error.tsv, which contains detected configuration anomalies.
 
 Format:
 
