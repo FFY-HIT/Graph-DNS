@@ -171,7 +171,7 @@ This is the standard workflow for running GraphDNS on a dataset.
 ### Step 2: Run Graph-Based Verification
 
 ```bash
-OMP_NUM_THREADS=8 ./graph_verifier ZoneRecord.facts
+./graph_verifier ZoneRecord.facts
 ```
 
 ### Step 3: Inspect Outputs
