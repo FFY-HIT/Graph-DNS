@@ -2,7 +2,6 @@
 # GraphDNS: Resolution Relation Graph Abstraction for Large-Scale Analysis of Static DNS Configurations
 
 <p align="center">
-  <img src="https://img.shields.io/badge/license-MIT-green" alt="license">
   <img src="https://img.shields.io/badge/platform-Ubuntu%2022.04-orange" alt="platform">
   <img src="https://img.shields.io/badge/language-C%2B%2B17-purple" alt="language">
   <img src="https://img.shields.io/badge/domain-DNS%20Security-red" alt="domain">
