@@ -13,7 +13,7 @@ PREPROCESS_PROGRAM="./preprocess"
 VERIFY_PROGRAM="./graph_verifier"
 
 # 数据集路径
-DATA_DIR="../census"
+DATA_DIR="../data/census1/census"
 
 # 记录数配置数组
 RECORD_COUNTS=(100000 200000 300000 400000 500000
