@@ -175,13 +175,6 @@ This is the standard workflow for running GraphDNS on a dataset.
 ./graph_verifier ZoneRecord.facts
 ```
 
-Expected output:
-
-```text
-Verification finished.
-Outputs: Error.tsv, GraphEdge.tsv
-```
-
 ### Step 3: Inspect Outputs
 
 GraphDNS produces two main output files:
